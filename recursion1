@@ -1,0 +1,14 @@
+package start;
+class Practice2 {
+//sum of natural no using recursion 
+        public static void main (String [] args){
+            System.out.println("add first ten no is "+ recursion(15));
+        }
+       static int recursion (int n){
+            if(n>0){
+                return n+ recursion(n-1);
+            }else{
+            return 0;
+            }
+        }
+    }
