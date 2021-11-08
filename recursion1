@@ -4,7 +4,7 @@ class Practice2 {
         public static void main (String [] args){
             System.out.println("add first ten no is "+ recursion(15));
         }
-       static int recursion (int n){
+       static int recursion (intn){
             if(n>0){
                 return n+ recursion(n-1);
             }else{
@@ -12,3 +12,10 @@ class Practice2 {
             }
         }
     }
+    //my use this
+    static int sum (int n) {
+            if(n==0){
+                return 0;
+            }
+            return n+sum(n-1);
+        }
