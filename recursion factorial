@@ -1,0 +1,15 @@
+class Practice2 {
+
+        //factorial of a no using recursion
+    public static void main(String []args){
+        int a=fact(5);
+        System.out.println(a);
+    }
+    static int fact (int n){
+        if(n>0){
+            return n*fact(n-1);
+        }else{
+            return 1;
+        }
+    }
+}
