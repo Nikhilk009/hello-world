@@ -1,0 +1,22 @@
+class Practice2 {
+
+    //multiply of a no in the list
+    public static void main(String[] args) {
+        System.out.println(size("nikhil"));
+
+     }
+     static String reverse (String name , int l , String rev){
+        if(l<0){
+            return rev;
+        }
+        rev+=name.charAt(l);
+        return reverse(name ,l-1,rev);
+
+    }
+    static  String size(String name){
+      String rev="";
+        int l=name.length();
+        return reverse(name,l-1,rev);
+     }
+
+}
